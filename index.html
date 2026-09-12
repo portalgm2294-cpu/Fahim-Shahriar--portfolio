@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahim Shahriar | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: white;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #111;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav h2 {
+      color: #00ff88;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    nav a:hover {
+      color: #00ff88;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 100px 20px 50px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    #home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    #home h1 {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    #home h1 span {
+      color: #00ff88;
+    }
+
+    .tagline {
+      color: #bbb;
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #00ff88;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: #00ff88;
+      margin-bottom: 20px;
+    }
+
+    .skills,
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #151515;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      border: 1px solid #222;
+    }
+
+    .card:hover {
+      border-color: #00ff88;
+    }
+
+    .gmail {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .gmail a,
+    .mobile a {
+      color: #00ff88;
+      text-decoration: none;
+    }
+
+    .mobile {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>Fahim Shahriar</h2>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- Home -->
+  <section id="home">
+    <h1>Hi, I'm <span>Fahim Shahriar</span></h1>
+
+    <p class="tagline">
+      Designer • Video Editor • Beginner Developer
+    </p>
+
+    <a href="#contact" class="btn">Contact Me</a>
+  </section>
+
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+
+    <p>
+      Hello! I'm Fahim Shahriar. I enjoy graphic design,
+      video editing and learning web development.
+    </p>
+
+    <br>
+
+    <p>
+      I create thumbnails, logos, social media designs and
+      short video edits. I'm also learning coding and
+      building my own projects.
+    </p>
+  </section>
+
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills">
+      <div class="card">Graphic Design</div>
+      <div class="card">Video Editing</div>
+      <div class="card">HTML & CSS</div>
+      <div class="card">Python</div>
+      <div class="card">Social Media</div>
+      <div class="card">Logo Design</div>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+      <div class="card">
+        <h3>Logo Design</h3>
+        <p>Creative logo and branding designs.</p>
+      </div>
+
+      <div class="card">
+        <h3>Video Editing</h3>
+        <p>Short videos and social media edits.</p>
+      </div>
+
+      <div class="card">
+        <h3>Website Project</h3>
+        <p>My personal web development projects.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <p class="gmail">
+      <strong>Gmail:</strong>
+      <a href="mailto:fahim19283746@gmail.com">
+        fahim19283746@gmail.com
+      </a>
+    </p>
+
+    <p class="mobile">
+      <strong>Mobile:</strong>
+      <a href="tel:01837129748">
+        01837129748
+      </a>
+    </p>
+
+  </section>
+
+
+  <footer>
+    © 2026 Fahim Shahriar. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
