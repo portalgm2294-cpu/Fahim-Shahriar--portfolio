@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heaven Barik — Photo, Video &amp; Logo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f2e6d8;
+    --bg-panel:#e8d3ba;
+    --ink:#3e2a1c;
+    --ink-soft:#8a6a4f;
+    --accent:#8a5230;
+    --accent-soft:#a9713f;
+    --line: rgba(62,42,28,0.16);
+    --mono:'Space Mono', 'Courier New', monospace;
+    --sans:'Inter', 'Helvetica Neue', Arial, sans-serif;
+  }
+  :root[data-theme="dark"]{
+    --bg:#2a1c12;
+    --bg-panel:#38271a;
+    --ink:#f2e6d8;
+    --ink-soft:#c9a988;
+    --line: rgba(242,230,216,0.16);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#2a1c12;
+      --bg-panel:#38271a;
+      --ink:#f2e6d8;
+      --ink-soft:#c9a988;
+      --line: rgba(242,230,216,0.16);
+    }
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.55;
+  }
+  a{color:inherit;}
+  .wrap{max-width:960px; margin:0 auto; padding:0 28px;}
+
+  header{
+    border-bottom:1px solid var(--line);
+    background:var(--bg);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:22px 0;
+  }
+  .nav-name{font-weight:700; font-size:16px;}
+  .nav-links{display:flex; gap:26px; list-style:none;}
+  .nav-links a{font-size:14px; text-decoration:none; color:var(--ink-soft);}
+  .nav-links a:hover{color:var(--accent);}
+  @media (max-width:640px){.nav-links{display:none;}}
+
+  section{padding:64px 0;}
+  h2{font-size:28px; font-weight:700; margin-bottom:8px;}
+  .kicker{
+    font-family:var(--mono); font-size:13px; color:var(--accent);
+    margin-bottom:10px;
+  }
+
+  /* hero */
+  .hero{padding:88px 0 72px;}
+  .hero h1{
+    font-size:clamp(32px, 5.2vw, 52px);
+    font-weight:700;
+    line-height:1.12;
+    max-width:16ch;
+  }
+  .hero p{
+    margin-top:20px; font-size:18px; color:var(--ink-soft); max-width:52ch;
+  }
+  .cta{
+    display:inline-block;
+    margin-top:32px;
+    padding:13px 26px;
+    background:var(--accent);
+    color:#f6efe9;
+    font-weight:600;
+    font-size:15px;
+    text-decoration:none;
+    border-radius:3px;
+  }
+  .cta:hover{background:var(--accent-soft);}
+
+  /* about */
+  .about-body{max-width:62ch; color:var(--ink-soft); font-size:16px;}
+  .about-body p + p{margin-top:14px;}
+  .stat-row{
+    margin-top:36px;
+    display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .stat{background:var(--bg); padding:20px;}
+  .stat-label{font-family:var(--mono); font-size:12px; color:var(--ink-soft);}
+  .stat-value{margin-top:6px; font-size:15px; font-weight:600;}
+  @media (max-width:640px){.stat-row{grid-template-columns:1fr;}}
+
+  /* skills */
+  .tag-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px;}
+  .tag{
+    padding:8px 14px;
+    border:1px solid var(--line);
+    border-radius:3px;
+    font-size:14px;
+    background:var(--bg-panel);
+  }
+
+  /* work */
+  .work-grid{
+    margin-top:28px;
+    display:grid; grid-template-columns:1fr 1fr; gap:1px;
+    background:var(--line); border:1px solid var(--line);
+  }
+  .work-card{background:var(--bg); padding:26px;}
+  .work-cat{font-family:var(--mono); font-size:12px; color:var(--accent);}
+  .work-card h3{margin-top:14px; font-size:19px; font-weight:700;}
+  .work-card p{margin-top:8px; font-size:14.5px; color:var(--ink-soft);}
+  @media (max-width:640px){.work-grid{grid-template-columns:1fr;}}
+
+  /* contact */
+  .contact-lines{margin-top:24px; font-size:16px;}
+  .contact-lines div{padding:10px 0; border-top:1px solid var(--line);}
+  .contact-lines div:last-child{border-bottom:1px solid var(--line);}
+  .contact-lines span.label{color:var(--ink-soft); margin-right:8px;}
+  .contact-lines a{text-decoration:none; border-bottom:1px solid var(--accent); color:var(--accent);}
+
+  footer{
+    padding:28px 0 48px;
+    font-size:13px; color:var(--ink-soft);
+  }
+
+  :focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="nav-name">Heaven Barik</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero wrap">
+    <h1>Hi, I'm Heaven Barik — a photo editor, video editor, and logo maker.</h1>
+    <p>I'm Heaven Barik — I edit photos, cut and grade video, and design logos for creators and small brands.</p>
+  </section>
+
+  <section id="about" class="wrap">
+    <div class="kicker">About</div>
+    <h2>What I actually do</h2>
+    <div class="about-body">
+      <p>Most of my work starts with something raw — a batch of unedited photos, a folder of clips, or just a business name — and ends with something people notice: a clean edit, a punchy short-form cut, or a logo that still reads clearly at thumbnail size.</p>
+      <p>I split my time between three things: retouching and colour-correcting photos, editing and grading video for reels and shorts, and building brand marks from scratch.</p>
+    </div>
+    <div class="stat-row">
+      <div class="stat">
+        <div class="stat-label">Focus</div>
+        <div class="stat-value">Photo, video &amp; logo work</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Turnaround</div>
+        <div class="stat-value">Fast drafts, tight revisions</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Open to</div>
+        <div class="stat-value">Freelance projects</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="wrap">
+    <div class="kicker">Skills</div>
+    <h2>What I work with</h2>
+    <div class="tag-row">
+      <span class="tag">Photo Editing</span>
+      <span class="tag">Retouching</span>
+      <span class="tag">Video Editing</span>
+      <span class="tag">Colour Grading</span>
+      <span class="tag">Logo Design</span>
+      <span class="tag">Brand Identity</span>
+      <span class="tag">Thumbnail Design</span>
+      <span class="tag">Social Media Content</span>
+    </div>
+  </section>
+
+  <section id="work" class="wrap">
+    <div class="kicker">Selected work</div>
+    <h2>A few frames from the reel</h2>
+    <div class="work-grid">
+      <div class="work-card">
+        <div class="work-cat">Portrait &amp; Product</div>
+        <h3>Photo Editing</h3>
+        <p>Colour correction, retouching, and compositing for portraits, products, and social posts.</p>
+      </div>
+      <div class="work-card">
+        <div class="work-cat">Reels &amp; Shorts</div>
+        <h3>Video Editing</h3>
+        <p>Paced, social-ready cuts — reels, shorts, and highlight edits with clean colour grading.</p>
+      </div>
+      <div class="work-card">
+        <div class="work-cat">Brand Marks</div>
+        <h3>Logo Design</h3>
+        <p>Logo and identity marks built for small businesses and creators, made to hold up at any size.</p>
+      </div>
+      <div class="work-card">
+        <div class="work-cat">Personal Build</div>
+        <h3>This Website</h3>
+        <p>My own portfolio page, laid out and styled to match my own work.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  © 2026 Heaven Barik. All rights reserved.
+</footer>
+
+</body>
+</html>
